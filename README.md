@@ -8,5 +8,5 @@
 - Links that open in a new tab
 - Scroll behavior
 - Styled contact form with text inputs.
-- Styles submit button
+- Styled submit button
 - Hover effects
