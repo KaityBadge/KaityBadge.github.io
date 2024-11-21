@@ -1,0 +1,234 @@
+/*FONTS FROM FONTS.GOOGLE.COM*/
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0; /*Places all elements to the edge of the bowser screen*/
+}
+
+
+/****HEADINGS****/
+h1 {
+    font-family:"Ge ist Mono", monospace;
+    text-align: center;
+    margin-top: 2%;
+    color: black;
+    font-weight: bold;
+}
+
+/****PORTFOLIO TITLE****/
+.title-text {
+    color: white;
+    margin-top: 5%;
+}
+
+.title-text:hover {
+    transform: scale(2.5);
+    transition: transform 1.5s;
+}
+
+/****PARAGRAPHS <p> ELEMENTS****/
+p {
+    font-family: "Geist Mono", monospace;
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.center {
+    text-align: center; /*Centers all elements with .center class*/
+}
+
+.project-link:hover {
+    transform: scale(2);
+    transition: transform 1.5s;
+}
+
+
+/****IMAGES****/
+img {
+    max-width: 100%;
+    height: 340px;
+    filter: grayscale(50%); /*Washed out 50% of the images color*/
+    border-radius: 8px; 
+    display: block; /*Ensures the images is centered*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/****NAVBAR****/
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /*Positions navbar to stay at the top of 
+    the screen, even when scrolling*/
+    width: 100%; /*navbar will stretch entire width of screen*/
+    top: 0px; /*Sets zero pixels of space above the navbar*/
+    z-index: 9; /*I set it to 9 so it is always at the top or
+    on the top of all other stacked elements. So other elements
+    will not display over the navbar*/
+}
+
+.navbar a {
+    float: left; /*Positions the text to the left side*/
+    color: white; /*Text color of <a> elements in navbar*/
+    display: block; /*Block will display on a new line and
+    take up the whole width of the screen*/
+    padding: 15px 20px; /*Adds space(padding) between each
+    <a> element i.e. the links*/
+    font-family: "Geist Mono", monospace; /*Font from fonts.google.com*/
+    font-size: 20px;
+    text-align: center; /*Centers the text within it's container*/
+    text-decoration: none; /*Gets rid of the underline under links*/
+    position: relative;
+}
+
+/*This portion controls the hover effect of the navbar*/
+.navbar a:hover {
+    background-color: #818181;
+    color: black;
+    font-weight: bold;
+}
+
+/****END NAVBAR STYLING****/
+
+
+
+/****VIDEO****/
+
+/*Formatting for the background video*/
+#binary_video {
+    position: fixed; /*Fixes video to be positioned in place
+    the video will not scroll with the page*/
+    right: 0px; /*No space between the edge of video and the
+    edge of the page*/
+    bottom: 0px; /*No space between the bottoms of video and 
+    the bottom of the page*/
+    top: 0px; /*No space between top of video and top of page
+    the video is pushed all the way to the top of page*/
+    min-width: 100%; /*Ensure the video takes up 100% of the width of the screen*/
+    z-index: -1; /*The negative will place the video behind all 
+    other elements on the screen*/
+}
+
+/*Text placed over the video*/
+.video_text{
+    color: white; /* Makes the font color white */
+    width: 100%; /* Ensures the video-text container fills the width of the video */
+    padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    padding-bottom: 10%; /*Gives space between Text and elements below, 
+    enough space to be abel to see the background video*/
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+}
+
+
+
+/****COLUMNS OF TABLES****/
+
+* { /*the asterick is a universal selector, it applies
+    the following to all elements on the page*/
+    box-sizing: border-box; /*This creates a box with a border
+    inside this is all our text. Without this, the boxes will not
+    be side by side.*/
+}
+
+.column_1 {
+    float: left;
+    width: 50%;
+    height: 400px;
+    padding-top: 3%;
+    background-color: #818181;
+    border: 1px solid#4B7A5A;
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding-top: 2%;
+    height: 400px;
+    border: 1px solid #4B7A5A;
+    background-color: #f3f0ef;
+}
+
+.stretch_column {
+    padding-top: 3.5px;
+    height: 450px;
+}
+
+.stretch_column_left {
+    height: 450px;
+    padding-top: 3.5%;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/****CONTACT FORM****/
+
+/*Styling for input text boxes*/
+input[type=text] {
+    width: 100%; /*Each input box expands 100% of the width of the container*/
+    padding: 15px; /*Makes boxes bigger by adding padding inside the box*/
+    border: 1px solid #4B7A5A; /*Adds thin border around each box*/
+    border-radius: 10px; /*Rounds the edges of the boxes*/
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: bold;
+}
+
+/*Submit button styling*/
+
+input[type=submit] {
+    background-color: #4B7A5A;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px; /*Gives more space between letters*/
+    padding: 5px; /*Adds padding in the box to make it bigger*/
+    cursor: pointer;
+    border-radius: 10px;
+    display: block; /*centers the submit button when combined
+    with the margin codes below*/
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #4B7A5A;
+    transform: scale(1.5); /*Buttons expands when hovered over*/
+    transition: transform 1s; /*Slows the transform expand to 1s, less abrupt*/
+}
+
+/*Styling the form element*/
+form {
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Geist Mono", monospace;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+
+/****END OF CONTACT FORM STYLING****/
+
+
+/****FOOTER****/
+footer {
+    background-color: #f3f0ef;
+    bottom: 0; /*0 pixels from the bottom of the page*/
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}

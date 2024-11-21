@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>K.Badgley</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/custom.css">
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    </head>
+
+    <!--BODY-->
+    <body>
+
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="binary_video">
+                <source src="images/video/binary.mp4" type="video/mp4">
+                <!--DISPLAY MESSAGE IF VIDEO DOESNT PLAY-->
+                Your browser does not support this HTML5 video.
+            </video>
+        </div>
+
+        <!--TEXT OVER VIDEO-->
+        <div class="video_text">
+            <h1 class="title-text">Kaity Badgley's Portfolio</h1>
+            <p class="center">
+                Hello, my name is Kaity Badgley.<br>
+                I'd like to welcome you to my portfolio website.<br>
+                This is where you can learn a little bit about me and the work I've done.
+            </p>
+        </div>
+
+
+
+        <!--ABOUT-->
+        <div class="Row" id="about">
+            <!--LEFT COLUMN -->
+            <div class="column_2">
+                <img src="Images/computers.jpg" alt="image of multiple computers">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_1">
+                <h1>About</h1>
+                <p>I am currently attending <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, 
+                    an award winning online bootcamp for coding.</p>
+                <p>My first experince of what I thought was coding was when I was 14, I would mess around on myspace
+                    creating different backgrounds, fonts, and place charaacters in lui of letters.</p>
+                <p>I aim to graduate from The Tech Academy with ample hours of study and experience in the following 
+                    programming languages: HTML, CSS, JavaScript, and C#. </p>
+            </div>
+        </div>
+
+        <!--GITHUB-->
+        <div class="Row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>Feel free to check out the coding projects I have been working on!</p>
+                <p>Here is the link to my GitHub profile.</p>
+                <p class="center project-link">
+                    <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank"> My Projects on GitHub</a>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_2">
+                <img src="Images/github_logo.png" alt="GitHub Logo">
+            </div>
+        </div>
+
+        <!--CONTACT-->
+        <div class="Row" id="contact">
+            <!--LEFT COLUMN-->
+            <div class="column_2 stretch_column_left">
+                <img src="Images/woman.png" alt="Cartoon-like image">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_1 stretch_column">
+                <h1>Contact</h1>
+                <form action="https://formspree.io/f/mldenvpg" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+       
+    </body>
+
+    <!--FOOTER-->
+    <footer>
+        <br>
+        <p class="center"> Thank you for your interest in <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank">my work</a>.</p>
+        <br>
+    </footer>
+</html>
