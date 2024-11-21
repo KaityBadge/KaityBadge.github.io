@@ -7,6 +7,6 @@
 - Nav bar 
 - Links that open in a new tab
 - Scroll behavior
-- Styled contact form with text imputs.
+- Styled contact form with text inputs.
 - Styles submit button
 - Hover effects
