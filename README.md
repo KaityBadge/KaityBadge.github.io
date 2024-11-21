@@ -1,7 +1,7 @@
 # PORTFOLIO WEBSITE
 
 ## I have created a website using CSS and HTML
-## My website has the following attibutes
+### My website has the following attibutes
 - Imported font
 - Muted and looped video
 - Nav bar 
