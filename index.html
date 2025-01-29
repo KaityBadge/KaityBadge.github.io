@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>K.Badgley</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/custom.css">
+        <link rel="stylesheet" type="media/css" href="stylesheet/custom-css-media.css">
+        <!--places the KB icon next to title of page-->
+        <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    </head>
+
+    <!--BODY-->
+    <body>
+
+        <!--inline JavaScript for fade-in/out effect 
+        helps to prevent flickering since browser won't have to download another script file-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
+
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#slideshow">Slideshow</a>
+            <a href="#about">About</a>
+            <a href="#github">GitHub</a>
+            <!--calls function to open or close form when buttons are clicked-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="binary_video">
+                <source src="Images/videos/binary.mp4" type="video/mp4">
+                <!--DISPLAY MESSAGE IF VIDEO DOESNT PLAY-->
+                Your browser does not support this HTML5 video.
+            </video>
+        </div>
+
+        <!--TEXT OVER VIDEO-->
+        <div class="video_text">
+            <h1 class="title-text">Kaity Badgley's Portfolio</h1>
+            <strong>
+                <br>
+                <br>
+                <p class="center">
+                    Hello, my name is Kaity Badgley.
+                    <br>
+                    I'd like to welcome you to my portfolio website.
+                    <br>
+                    This is where you can learn a little bit about me and the work I've done.
+                </p>
+            </strong>
+        </div>
+
+        <!--SLIDESHOW-->
+        <div id="slideshow">
+            <div id="slideshow_Background">
+                <div id="slideshow_Container">
+                    <!--Slide 1-->
+                    <div class="mySlides fade" style="display: block;">
+                        <img class="slideshow_Images" src="Images/selfie.jpg" alt="image of K.Badgley">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!--Slide 2-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_Images" src="Images/academylogo.png" alt="Tech Academy logo">
+                        <div class="text">Soon to be a graduate from The Tech Academy.</div>
+                    </div>
+                    <!--Slide 3-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_Images" src="Images/languages.png" alt="HTML, CSS, JavaScript logos">
+                        <div class="text">I have hours of training in: <br> HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!--Slide 4-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_Images" src="Images/sql.png" alt="SQL database logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!--Slide 5-->
+                    <div class="mySlides fade">
+                        <img class="slideshow_Images" src="Images/vscode.jpg" alt="Visual Studio Code logo">
+                        <div class="text">I am well equipped to work in VSCode. </div>
+                    </div>
+                    <!--Arrows to change slides-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!--adds a space between images and the dots-->
+
+                <!--Slideshow dots to navigate through images-->
+                <div style="text-align: center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                </div>
+            </div>
+        </div>
+
+
+        <!--ABOUT-->
+        <div class="Row" id="about">
+            <!--LEFT COLUMN -->
+            <div class="column_2">
+                <img src="Images/computers.JPG" alt="image of multiple computers">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_1">
+                <h1>About</h1>
+                <p> I am currently attending <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, 
+                    an award winning software developement bootcamp.
+                <br>
+                <br>I aim to graduate with ample hours of study and experience in the following 
+                    programming languages: HTML, CSS, JavaScript, and C#.
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB-->
+        <div class="Row" id="github">
+            <!--LEFT COLUMN-->
+            <div class="column_1">
+                <h1>GitHub</h1>
+                <p>Feel free to check out the coding projects I have been working on!</p>
+                <p>Here is the link to my GitHub profile.</p>
+                <p class="center project-link">
+                    <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank"> My Projects on GitHub</a>
+                </p>
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_2">
+                <img src="Images/github_logo.PNG" alt="GitHub Logo">
+            </div>
+        </div>
+
+        <!--LAST COLUMN-->
+        <div class="Row" id="contact">
+            <!--LEFT COLUMN-->
+            <div class="column_2">
+                <img src="Images/woman.PNG" alt="Cartoon-like image">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="column_1">
+                
+            </div>
+        </div>
+        
+        <!--CONTACT FORM-->
+        <div id="contact">
+            <button onclick="openForm()" class="pop_up_Button">Contact</button>
+            <div class="form-popup" id="contactForm">
+                <form action="https://formspree.io/f/mldenvpg" method="POST" class="form-container">
+                    <label>Name:</label>
+                        <input type="text" id="Name" name ="Name" placeholder="Enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Enter your email here">
+                    <label>Phone Number:</label>
+                        <input type="text" id="Phone" name="Phone" placeholder="Enter your phone number here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Write your message here">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn close" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer>
+             <br>
+            <p class="center"> Thank you for your interest in <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank">my work</a>.</p>
+            <br>
+        </footer>
+
+        <script src="JS/javascript.js"></script>
+    </body>    
+</html>
