@@ -1,0 +1,97 @@
+/*** MEDIA QUERY ***/
+
+/* media rules for paragraph font size on different screen sizes */
+
+
+@media screen and (max-width: 527px) {
+    p {
+        font-size: 3.75vw;
+    }
+}
+
+@media screen and (min-width: 528px) and (max-width: 660px) {
+    p {
+        font-size: 3.5vw;
+    }
+}
+@media screen and (min-width: 661px) and (max-width: 799px) {
+    p {
+        font-size: 2.75vw;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 924px) {
+    p {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 925px) and (max-width: 1050px) {
+    p {
+        font-size: 2.25vw;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1310px) {
+    p {
+        font-size: 2vw;
+    } 
+}
+
+@media screen and (min-width: 1311px) and (max-width: 1535px) {
+    p {
+        font-size: 1.75vw;
+    }
+}
+
+@media screen and (min-width: 1536px) and (max-width: 2269px) {
+    p {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 2270px) {
+    p {
+        font-size: 1.35vw;
+    }
+}
+
+
+/* Media rules for navbar links for different screen sizes */
+
+/*for screens that are 1080 pixels and smaller*/
+@media screen and (max-width: 1080px) {
+    .navbar a {
+        width: 20%; /*sets each <a> element to 20% of navbars width for equally distributed screen placement*/
+        font-size: 2.5vw;
+    }
+}
+
+/*makes title text bigger for screens 1080 pixels or smaller*/
+@media screen and (max-width: 1080px) {
+    .quote{
+        font-size: 3.5vw;
+    }
+
+    .title-text {
+        font-size: 4.5vw;
+    }
+}
+
+/*increases size of columns on screens of 1725 pixels or larger*/
+@media screen and (min-width: 1725px) {
+    .column_1 {
+        height: 550px;
+    }
+    .column_2 {
+        height: 550px;
+    }
+}
+
+/*removes margin from the h1 elements when screen is  2000 pixels or bigger*/
+/*makes it so paragraph text will fit in the column*/
+@media screen and (min-width: 2000px) {
+    h1{
+        margin-top: 0;
+    }
+}
