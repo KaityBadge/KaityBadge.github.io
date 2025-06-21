@@ -1,7 +1,7 @@
 # PORTFOLIO WEBSITE
 
-## Created with HTML, CSS, and JavaScript
-## Visual Studio Code 
+### Created with HTML, CSS, and JavaScript
+### Visual Studio Code 
 ### Attributes
 - Imported font
 - Muted and looped video
