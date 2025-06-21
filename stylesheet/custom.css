@@ -45,7 +45,7 @@ h1:hover {
 /* Specifically styles the title text */
 .title-text {
     color: white;
-    padding-top: 20vh; /*adds relative padding that is 20% of viewport height to the top of Title*/
+    padding-top: 15vh; /*adds relative padding that is 15% of viewport height to the top of Title*/
     font-size: 5vh;
 }
 
@@ -57,11 +57,23 @@ h1:hover {
 /* PARAGRAPH ELEMENTS */
 p {
     font-family: "Geist Mono", monospace;
-    text-align: justify; /*justifies the spacing between words by keeping margins on both sides*/
+    /*text-align: justify; /*justifies the spacing between words by keeping margins on both sides*/
     letter-spacing: .1vw; /*slightly expands the text*/
     font-size: 1.6vw; /*font size is 1.6% of viewport width*/
     padding-left: 1vw; /*padding is 1% of viewport width on left and right is noted below*/
     padding-right: 1vw;
+}
+
+/*centers introduction message*/
+.intro-text {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.intro-text p {
+    text-indent: 2em;
+    text-align: left;
 }
 
 /*when hovering over paragraph element*/
@@ -347,6 +359,10 @@ footer {
     background-color: #818181;
 }
 
+#about .column_1 p {
+    overflow-y: auto; /*allows the text to scroll vertically if it overflows the height of the column*/
+}
+
 .column_2 {
     float: left; 
     width: 50%; /*column takes up half of the page width*/
@@ -362,6 +378,7 @@ footer {
     display: table; /*tells browser to treat the elements as a table according to this display style*/
     clear: both; /*clears any elements from floating on the left or right of an element*/
 }
+
 
 /****END TABLE STYLING****/
 
