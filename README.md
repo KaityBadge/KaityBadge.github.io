@@ -1,7 +1,8 @@
 # PORTFOLIO WEBSITE
 
-## I have created a website using CSS and HTML
-### My website has the following attibutes
+## Created with HTML, CSS, and JavaScript
+## Visual Studio Code 
+### Attributes
 - Imported font
 - Muted and looped video
 - Nav bar 
@@ -10,3 +11,5 @@
 - Styled contact form with text inputs.
 - Styled submit button
 - Hover effects
+- Functional slide show
+- Event listeners
