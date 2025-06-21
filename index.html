@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <!--HEAD-->
+    <!--Head-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
         <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     </head>
 
-    <!--BODY-->
+    <!--Body-->
     <body>
 
         <!--inline JavaScript for fade-in/out effect 
@@ -23,7 +23,7 @@
             });
         </script>
 
-        <!--NAVBAR-->
+        <!--Navbar-->
         <div class="navbar">
             <a class="active" href="#Home">Home</a>
             <a href="#slideshow">Slideshow</a>
@@ -33,56 +33,59 @@
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
-        <!--BACKGROUND VIDEO-->
+        <!--Background video-->
         <div id="Home">
             <video autoplay muted loop id="binary_video">
                 <source src="./images/videos/binary.mp4" type="video/mp4">
-                <!--DISPLAY MESSAGE IF VIDEO DOESNT PLAY-->
+                <!--Display message if video doesn't play-->
                 Your browser does not support this HTML5 video.
             </video>
         </div>
 
-        <!--TEXT OVER VIDEO-->
+        <!--Text over video-->
         <div class="video_text">
-            <h1 class="title-text">Kaity Badgley's Portfolio</h1>
+            <h1 class="title-text">Welcome - I'm Kaity Badgley</h1>
             <strong>
                 <br>
                 <br>
                 <p class="center">
-                    Hello, my name is Kaity Badgley.
+                    I am passionate about turning ideas into impactful and creative experiences
+                    whether it's solving challengings problems or building something awesome from scratch.
                     <br>
-                    I'd like to welcome you to my portfolio website.
+                    This portfolio is a snapshot of my journey so far: a collection of projects,
+                    skills, and the values that inspire and drive my work.
                     <br>
-                    This is where you can learn a little bit about me and the work I've done.
+                    Explore the site to discover more about who I am, what I create, and the process
+                    that brings it all to life.
                 </p>
             </strong>
         </div>
 
-        <!--SLIDESHOW-->
+        <!--Slideshow-->
         <div id="slideshow">
             <div id="slideshow_Background">
                 <div id="slideshow_Container">
-                    <!--Slide 1-->
+                    <!--Slide 1 of 5-->
                     <div class="mySlides fade" style="display: block;">
                         <img class="slideshow_Images" src="./images/selfie.jpg" alt="image of K.Badgley">
-                        <div class="text">I'm available to assist you on your project!</div>
+                        <div class="text">I am a full-stack developer.</div>
                     </div>
-                    <!--Slide 2-->
+                    <!--Slide 2 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_Images" src="./images/academylogo.png" alt="Tech Academy logo">
-                        <div class="text">Soon to be a graduate from The Tech Academy.</div>
+                        <div class="text">Graduate from The Tech Academy.</div>
                     </div>
-                    <!--Slide 3-->
+                    <!--Slide 3 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_Images" src="./images/languages.png" alt="HTML, CSS, JavaScript logos">
-                        <div class="text">I have many hours of training in: <br> HTML, CSS, JavaScript, C#, </div>
+                        <div class="text">I am trained in: <br> HTML, CSS, JavaScript,</div>
                     </div>
-                    <!--Slide 4-->
+                    <!--Slide 4 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_Images" src="./images/sql.png" alt="SQL database logo">
-                        <div class="text">back end development, databases and SQL.</div>
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, databases and SQL.</div>
                     </div>
-                    <!--Slide 5-->
+                    <!--Slide 5 of 5-->
                     <div class="mySlides fade">
                         <img class="slideshow_Images" src="./images/vscode.jpg" alt="Visual Studio Code logo">
                         <div class="text">I am well equipped to work in VSCode, Visual Studio, and SQLSMS. </div>
@@ -105,16 +108,16 @@
         </div>
 
 
-        <!--ABOUT-->
+        <!--About section-->
         <div class="Row" id="about">
-            <!--LEFT COLUMN -->
+            <!--Left column -->
             <div class="column_2">
                 <img src="./images/computers.jpg" alt="image of multiple computers">
             </div>
-            <!--RIGHT COLUMN-->
+            <!--Right column-->
             <div class="column_1">
                 <h1>About</h1>
-                <p> I am currently attending <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, 
+                <p> I studied at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, 
                     an award winning software developement bootcamp.
                 <br>
                 <br>I aim to graduate with ample hours of study and experience in the following 
@@ -123,36 +126,36 @@
             </div>
         </div>
 
-        <!--GITHUB-->
+        <!--Github-->
         <div class="Row" id="github">
-            <!--LEFT COLUMN-->
+            <!--Left column-->
             <div class="column_1">
                 <h1>GitHub</h1>
                 <p>Feel free to check out the coding projects I have been working on!</p>
                 <p>Here is the link to my GitHub profile.</p>
                 <p class="center project-link">
-                    <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank"> My Projects on GitHub</a>
+                    <a href="https://github.com/KaityBadge.git" target="_blank"> My Projects on GitHub</a>
                 </p>
             </div>
-            <!--RIGHT COLUMN-->
+            <!--Right column-->
             <div class="column_2">
                 <img src="./images/github_logo.png" alt="GitHub Logo">
             </div>
         </div>
 
-        <!--LAST COLUMN-->
+        <!--Last column-->
         <div class="Row" id="contact">
-            <!--LEFT COLUMN-->
+            <!--Left column-->
             <div class="column_2">
                 <img src="./images/woman.png" alt="Cartoon-like image">
             </div>
-            <!--RIGHT COLUMN-->
+            <!--Right column-->
             <div class="column_1">
                 
             </div>
         </div>
         
-        <!--CONTACT FORM-->
+        <!--Contact form-->
         <div id="contact">
             <button onclick="openForm()" class="pop_up_Button">Contact</button>
             <div class="form-popup" id="contactForm">
@@ -172,10 +175,10 @@
             </div>
         </div>
 
-        <!--FOOTER-->
+        <!--Footer-->
         <footer>
              <br>
-            <p class="center"> Thank you for your interest in <a href="https://github.com/KaityBadge/HTML-AND-CSS-PROJECTS.git" target="_blank">my work</a>.</p>
+            <p class="center"> Thank you for your interest in <a href="https://github.com/KaityBadge.git" target="_blank">my work</a>.</p>
             <br>
         </footer>
 
