@@ -388,6 +388,11 @@ footer {
     clear: both; /*clears any elements from floating on the left or right of an element*/
 }
 
+/*contact column*/
+.contact-info li{
+    margin-bottom: 15px;
+}
+
 
 /****END TABLE STYLING****/
 
