@@ -351,24 +351,33 @@ footer {
     is all our text. Without this, the boxes will not be side by side.*/
 }
 
-.column_1 {
-    float: left;
-    width: 50%; /*column takes up half of the page width*/
-    height: 450px;
-    padding: 1.6%;
-    background-color: #818181;
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#about .column_1 p {
-    overflow-y: auto; /*allows the text to scroll vertically if it overflows the height of the column*/
+/*shared styling for column 1 and 2*/
+.column_1,.column_2 {
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1 1 400px; /*columns adjust to screen size with a min of 400px wide*/
+    overflow-wrap: break-word; /*forces longer strings to break/wrap to new line*/
+}
+
+.column_1 {
+    background-color: #818181;
+    color: white;
 }
 
 .column_2 {
-    float: left; 
-    width: 50%; /*column takes up half of the page width*/
-    padding: 1.6%; /*adds a little padding within the element so images aren't on the edges*/
-    height: 450px;
     background-color: #f3f0ef;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 
