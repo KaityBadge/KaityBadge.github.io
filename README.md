@@ -1,10 +1,10 @@
 # My Portfolio Website
 
-##🔧 Tools & Technologies
+## 🔧Tools & Technologies
 - **Languages:** HTML, CSS, JavaScript
 - **Developement Environment:** Visual Studio Code
 
-##🎭 Features & Highlights
+## 🎭Features & Highlights
 - Custom imported font for unique visual identity
 - Full-screen looping and muted background video for dynamic effect
 - Responsive nav bar with smooth scrool behavior
